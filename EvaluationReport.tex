@@ -4,7 +4,8 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
-% \usepackage{cite} % You can modify this for Fenner School Harvard referencing style
+\usepackage[backend=biber,style=authoryear]{biblatex}
+\addbibresource{references.bib}
 
 % Title
 \title{Your Evaluation Report Title}
@@ -22,7 +23,11 @@ This section provides a brief summary of the evaluation report, outlining the ke
 \newpage
 
 \section*{Introduction}
-State the question being addressed in the report and provide context to the problem using relevant background information. This section should introduce the topic and explain why it is significant.
+The World Economic Forum  outlines six key technologies critical for climate change adaptation, including the powerful roles of Earth Observation (EO) and Artificial Intelligence (AI). EO technologies allow for real-time monitoring of environmental changes, such as deforestation, urbanization, and rising sea levels, offering critical data to enhance climate resilience. AI can help process this vast amount of EO data, identify patterns, and generate predictive models, which can support better decision-making in areas like disaster risk management and agricultural planning.
+
+However, the significant role that Information and Communication Technology (ICT) plays in global emissions—over 3\% of carbon emissions (\cite{jones_2018}) —raises the question of how big tech companies are addressing their environmental impact. While AI and EO tools offer potential benefits in mitigating climate change, their carbon costs are often overlooked. For instance, AI models require massive computational power, and EO platforms consume vast amounts of energy through cloud-based infrastructure.
+
+Given ICT's dual role as both a solution provider and a contributor to climate change, it is essential to examine the adaptation strategies tech companies are implementing to reduce their carbon footprints. While AI and Earth Observation (EO) technologies are vital for understanding and responding to climate change, their environmental costs must be weighed against their benefits. Currently, no specific framework exists to assess these strategies within the tech sector, necessitating reliance on established climate change metrics for evaluation. A thorough assessment of tech companies' adaptation strategies will help ensure their contributions to climate resilience are not undermined by their own carbon emissions, aligning with broader sustainability goals
 
 \section*{Methods}
 Describe the criteria being used for the evaluation in this section. Include a brief overview of the selected nation/region/sector and explain why this particular area was chosen for the evaluation.
@@ -37,8 +42,7 @@ Synthesize the information you gathered from the comparisons. Discuss patterns, 
 Summarize the main conclusions of your evaluation. Reflect on what the comparisons suggest about the criteria and any recommendations based on the results.
 
 \newpage
-% \bibliographystyle{plain} % Change this to Fenner School Harvard style as required.
-% \bibliography{references}
+\printbibliography
 
 \end{document}
 

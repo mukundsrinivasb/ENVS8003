@@ -6,3 +6,8 @@
 *.out
 *.pdf
 *.synctex.gz
+*.bbl
+*.bcf
+*.blg
+*.run.xml
+
