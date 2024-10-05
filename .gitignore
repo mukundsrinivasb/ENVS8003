@@ -1,2 +1,8 @@
-!*.tex
-!*.bib
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.log
+*.out
+*.pdf
+*.synctex.gz
