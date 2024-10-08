@@ -7,8 +7,20 @@
 \usepackage[backend=biber,style=authoryear,citestyle=authoryear,natbib=true]{biblatex}
 \addbibresource{references.bib}
 \usepackage[a4paper, margin=1in]{geometry}
+\usepackage{titlesec}
 \setlength{\parskip}{1em} 
 \setlength{\bibitemsep}{1em} % Add spacing between bibliography entries
+
+%Customizing section titles
+% Customize section and subsection titles
+\titleformat{\section}
+  {\normalfont\Large\bfseries} % Section titles will be in large, bold font
+  {\thesection}{1em}{}
+  [\titlerule]
+
+\titleformat{\subsection}
+  {\normalfont\large} % Subsection titles will be slightly smaller
+  {\thesubsection}{1em}{}
 
 % Title
 \title{Adaptation Plan Evaluation Report}
@@ -31,6 +43,9 @@ This section provides a brief summary of the evaluation report, outlining the ke
 
 The World Economic Forum (\cite{masterson_2024})  outlines six key technologies critical for climate change adaptation, 
 including the powerful roles of Earth Observation [EO] and Artificial Intelligence [AI]. 
+
+
+\subsection*{Eearth Observation}
 EO sector plays a pivotal role in climate change mitigation by offering critical data for monitoring deforestation, land-use changes, and rising sea levels (\cite{anderson_2017}). 
 However, as EO becomes more industrialized (\cite{venkatesan_2020}) , it presents several significant environmental risks that must be considered when evaluating its contribution to climate adaptation (\cite{crisp_2020}).
 
@@ -53,13 +68,14 @@ will guide the evaluation, ensuring that these companies’ adaptation policies 
 the scorecard suggested by the IIED (\cite{craft_2016}) for systematic reporting, along with the framework proposed in the article by Jones N. (\cite{jones_2001}) 
 to assess the adaptation strategies of the selected companies effectively.
 
-
+\pagebreak
 \section*{Methods}
-Earth Observation [EO] plays a vital role in achieving the Sustainable Development Goals (SDGs) outlined in the 2030 Agenda. EO technologies help track, monitor, and report progress toward these goals by enabling data-driven decision-making, improving the accuracy of national statistics through spatially explicit data, and addressing cross-cutting themes such as climate and energy. The Group on Earth Observations (GEO) is pivotal in ensuring EO's practical application in supporting the 2030 Agenda, particularly through partnerships, as emphasized in Strategic Development Goal 17. EO's contributions to national planning and fostering synergy between various development sectors can significantly enhance the achievement of SDG targets, providing a strong return on investment.
+Earth Observation [EO] plays a vital role in achieving the Sustainable Development Goals (SDGs) outlined in the 2030 Agenda. EO technologies help track, monitor, 
+and report progress toward these goals by enabling data-driven decision-making, improving the accuracy of national statistics through spatially explicit data, and 
+addressing cross-cutting themes such as climate and energy. The Group on Earth Observations (GEO) is pivotal in ensuring EO's practical application in 
+supporting the 2030 Agenda, particularly through partnerships, as emphasized in Strategic Development Goal 17. EO's contributions to national planning and fostering 
+synergy between various development sectors can significantly enhance the achievement of SDG targets, providing a strong return on investment.
 
-The Earth Observation [EO] sector plays a pivotal role in climate change mitigation by offering critical 
-data for monitoring deforestation, land-use changes, and rising sea levels (\cite{anderson_2017}). However, as EO becomes more industrialized (\cite{venkatesan_2020}), 
-it presents several significant environmental risks that must be considered when evaluating its contribution to climate adaptation (\cite{crisp_2020}).
 
 \section*{Comparison}
 Here, make the necessary comparisons based on the criteria from the Methods section. Discuss how different nations/regions/sectors perform according to these criteria. You may break this into subsections if there are multiple comparisons.
