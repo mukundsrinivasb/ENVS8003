@@ -10,4 +10,5 @@
 *.bcf
 *.blg
 *.run.xml
+!EvaluationReport_India.pdf
 
