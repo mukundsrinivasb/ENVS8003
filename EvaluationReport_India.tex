@@ -4,6 +4,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{hyperref}
+\usepackage{enumitem}
 \usepackage[backend=biber,style=authoryear,citestyle=authoryear,natbib=true]{biblatex}
 \addbibresource{references_india.bib}
 \usepackage[a4paper, margin=0.8in]{geometry}
@@ -19,11 +20,16 @@
 %   \titlespacing{\subsection}{0pt}{*0}{-0.8em}
   [\titlerule]
   
-
+%Italicised subsectiom
 \titleformat{\subsection}
-  {\normalfont\bfseries} % Subsection titles will be slightly smaller
+  {\normalfont\bfseries\itshape} % Subsection titles will be slightly smaller
   {\thesubsection}{1em}{}
 \titlespacing{\subsection}{0pt}{0em}{-0.3em}
+
+% Regular non-italic subsection (unnumbered)
+\newcommand{\regularsubsection}[1]{%
+  \vspace{1em} % Adjust spacing if needed
+  \noindent\textbf{#1}\par\vspace{-0.3em}}
 
 % Title
 \title{Adaptation Plan Evaluation Report}
@@ -36,14 +42,42 @@
 \maketitle
 
 \begin{abstract}
-This section provides a brief summary of the evaluation report, outlining the key question being addressed, methods used, and main conclusions.
+This section provides a brief summary of the evaluation report, outlining the key question being addressed, methods used, 
+and main conclusions.
 \end{abstract}
 
 \newpage
 
 \section*{Introduction}
-Climate change in India affects multiple facets of the ecosystem, including oceans (\cite{Marathe2021TropicalIO}).
-coastal regions (\cite{Gupta2018ImpactOC}), water resources (\cite{Amano2021ClimateCE}) and forests (\cite{Lele2019ClimateCA}). Additionally, it significantly impacts 
-agriculture (\cite{Kumar2023DeterminantsOC}), urban areas, public health(\cite{ipcc_climate_2023}), and energy infrastructure, creating complex challenges that require coordinated responses.
+Climate change in India affects multiple facets of the ecosystem, including oceans (\cite{marathe_2021}).
+coastal regions (\cite{gupta_impact_2019}), water resources (\cite{shiva_shankar_2021}) and forests (\cite{Lele2019ClimateCA}). Additionally, it significantly impacts 
+agriculture (\cite{Kumar2023DeterminantsOC}), urban areas, public health(\cite{rajput_2022}), and energy infrastructure (\cite{Yarlagadda_22}), 
+creating complex challenges that require coordinated responses. Each of these vulnerabilities will be examined in detail to highlight the specific risks.
+\subsection*{Coastal Regions}
+Climate change is projected to exacerbate the impacts of tropical cyclonic storms by increasing their intensity as sea surface temperatures 
+rise. The North Indian Ocean comprising the Bay of Bengal and the Arabian Sea accounts for only 7\% of global cyclones 
+these storms are disproportionately destructive, particularly along the densely populated, low-lying East Indian and Bangladeshi coasts, 
+which are highly vulnerable to storm surges and flooding. Also, while the Arabian Sea has historically experienced fewer high-intensity storms due to 
+factors such as unfavourable wind shear, dry air from the Thar Desert, and cooler sea temperatures, recent years have seen a rise in stronger cyclones 
+in the region. This shift suggests that changing climatic conditions are altering traditional storm patterns and intensifying their impacts, posing 
+new challenges for coastal resilience and disaster preparedness (\cite{gupta_impact_2019})
+
+\subsection*{Water resources}
+\regularsubsection{Adaptation Policy and activities}
+The National Action Plan on Climate Change [NAPCC] (\cite{napcc_2008}) articulates India's adaptation goals addressing climate 
+vulnerabilities across key sectors while promoting sustainable growth. NAPCC identifies eight National Missions, which form 
+the core of the National Action Plan, out of which five missions are focusing on adaptation, which are:
+\begin{enumerate}[topsep=0pt, parsep=0pt, partopsep=0pt]
+  \item \textbf{National Water Mission}: Promotes integrated water resource management to conserve water, minimize wastage, 
+  and ensure equitable distribution across regions and states.  
+  \item \textbf{Mission for Sustaining the Himalayan Ecosystem}: Aims to safeguard Himalayan glaciers and ecosystems through 
+  sustainable management and a monitoring network.  
+  \item \textbf{National Mission for a Green India}: Focuses on enhancing ecosystem services, including carbon sequestration, 
+  through afforestation and reforestation efforts.
+  \item \textbf{National Mission for Sustainable Agriculture}: Seeks to build climate resilience in agriculture by adopting new 
+  technologies, integrating traditional knowledge, and introducing improved credit and insurance systems. 
+  \item \textbf{National Mission on Strategic Knowledge for Climate Change}: Facilitates research, innovation, 
+  and global collaboration to address climate challenges and develop effective responses.
+\end{enumerate}
 
 \end{document}
