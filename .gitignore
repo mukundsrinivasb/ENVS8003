@@ -10,5 +10,9 @@
 *.bcf
 *.blg
 *.run.xml
-!EvaluationReport_India.pdf
+*.docx
+*.tmp
 
+# Exceptions
+!EvaluationReport_India.pdf
+!ENVS8003_Ass4_word.docx
